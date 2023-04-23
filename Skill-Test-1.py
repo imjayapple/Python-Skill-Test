@@ -14,3 +14,13 @@ foo()
 print(x)
 
 #5. Write a simple function that takes a string as an input and returns the string reversed.
+
+#6. What is a decorator in Python, and what is a common use case for them?
+
+#7. Explain the difference between "pass", "continue", and "break" in Python.
+
+#8. How do you create a virtual environment in Python, and why would you use one?
+
+#9. What is list comprehension, and provide an example of how to use it.
+
+#10. Describe the difference between a shallow copy and a deep copy in Python.
