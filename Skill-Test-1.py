@@ -1,8 +1,10 @@
 #1. What is the difference between a list and a tuple in Python?
-
-# Lists are muttable in python, tuples are not.
+# • Lists are muttable in python, tuples are not.
 
 #2. What is the purpose of the __init__ method in a Python class?
+# • The purpose of the __init__ method is to initialize a new instance of a class when it is created.
+# It allows you to set initial values for attributes, allocate resources, or perform any other setup
+# tasks required for the object.
 
 #3. How do you add an item to a set in Python?
 
