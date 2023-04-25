@@ -1,5 +1,7 @@
 #1. What is the difference between a list and a tuple in Python?
 
+# Lists are muttable in python, tuples are not.
+
 #2. What is the purpose of the __init__ method in a Python class?
 
 #3. How do you add an item to a set in Python?
