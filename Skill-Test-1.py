@@ -7,6 +7,13 @@
 # tasks required for the object.
 
 #3. How do you add an item to a set in Python?
+# • Add items to a set by using the 'add()' method
+# ex.
+my_set = {1, 2, 3}
+item_to_add = 4
+
+my_set.add(item_to_add)
+print(my_set)
 
 #4. What is the output of the following code?
 x = 10
