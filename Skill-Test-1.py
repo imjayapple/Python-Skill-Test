@@ -24,6 +24,8 @@ def foo():
 foo()
 print(x)
 
+# The code calls the function foo() which initializes the variable x with a value of 5 and prints said variable
+
 #5. Write a simple function that takes a string as an input and returns the string reversed.
 
 #6. What is a decorator in Python, and what is a common use case for them?
