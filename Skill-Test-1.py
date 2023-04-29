@@ -27,7 +27,15 @@ print(x)
 # The code calls the function foo() which initializes the variable x with a value of 5 and prints said variable
 
 #5. Write a simple function that takes a string as an input and returns the string reversed.
+# Use the slice operator, 'start:end', the last index in the slice notation represents the step value, the interval
+# between the elements that are included in the slice, default value of 1. By implementing '-1' it slices through every
+# element in the sequence but in reverse order
+def reverse_string(input_string):
+    return input_string[::-1]
 
+input_string = " dlrow olleh"
+test_reverse_string = reverse_string(input_string)
+print(test_reverse_string)
 #6. What is a decorator in Python, and what is a common use case for them?
 
 #7. Explain the difference between "pass", "continue", and "break" in Python.
