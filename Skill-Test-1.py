@@ -37,6 +37,25 @@ input_string = " dlrow olleh"
 test_reverse_string = reverse_string(input_string)
 print(test_reverse_string)
 #6. What is a decorator in Python, and what is a common use case for them?
+# Decorators are used to modify functions without changing its code
+# ex. (below) timing_decorator takes a function "func" as input and returns a
+# new function 'wrapper', which in this case adds a timing functionality
+import time
+
+def timing_decorator(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        end_time = time.time()
+        print(f"{func.__name__} took {end_time - start_time:.2f} seconds to execute.")
+        return result
+    return wrapper
+
+@timing_decorator
+def some_function():
+    time.sleep(2)
+
+some_function()
 
 #7. Explain the difference between "pass", "continue", and "break" in Python.
 
