@@ -58,6 +58,12 @@ def some_function():
 some_function()
 
 #7. Explain the difference between "pass", "continue", and "break" in Python.
+# These terms are all a part of control flow statements.
+# The "pass" statement is a no-operation (no-op) statement that does nothing when executed.
+# The "continue" statement is used to skip the rest of the current iteration of the loop and proceed to the next iteration. 
+# The "break" statement is used to exit the loop prematurely, i.e., to terminate the loop before it has completed all its iterations.
+
+
 
 #8. How do you create a virtual environment in Python, and why would you use one?
 
