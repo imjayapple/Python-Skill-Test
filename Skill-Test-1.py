@@ -63,9 +63,9 @@ some_function()
 # The "continue" statement is used to skip the rest of the current iteration of the loop and proceed to the next iteration. 
 # The "break" statement is used to exit the loop prematurely, i.e., to terminate the loop before it has completed all its iterations.
 
-
-
 #8. How do you create a virtual environment in Python, and why would you use one?
+# You create an isolated environment so that you can install packages and dependencies
+# without interferring with the global python installation. Use the "venv" command.
 
 #9. What is list comprehension, and provide an example of how to use it.
 
