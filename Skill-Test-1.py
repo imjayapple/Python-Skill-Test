@@ -68,6 +68,9 @@ some_function()
 # without interferring with the global python installation. Use the "venv" command.
 
 #9. What is list comprehension, and provide an example of how to use it.
+# List comprehensions are expressed as single line of code that allow users to generate a list
+# ex. [expression for item in iterable if condition]
+squares_of_evens = [x**2 for x in range(1, 11) if x % 2 == 0]
 
 #10. Describe the difference between a shallow copy and a deep copy in Python.
 
