@@ -73,6 +73,10 @@ some_function()
 squares_of_evens = [x**2 for x in range(1, 11) if x % 2 == 0]
 
 #10. Describe the difference between a shallow copy and a deep copy in Python.
+# Shallow vs. Deep copies vary in the way they duplicate objects and their contents.
+# Shallow: creates a new object, but does not create new instances of the objects within the original object.
+# Deep: creates a new object and recursively creates new instances of the objects contained within the original object.
+
 
 #11. Explain the concept of "duck typing" in Python and provide an example.
 
