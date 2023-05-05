@@ -77,8 +77,33 @@ squares_of_evens = [x**2 for x in range(1, 11) if x % 2 == 0]
 # Shallow: creates a new object, but does not create new instances of the objects within the original object.
 # Deep: creates a new object and recursively creates new instances of the objects contained within the original object.
 
-
 #11. Explain the concept of "duck typing" in Python and provide an example.
+# It is a concept where the type or class of an object is less importantn than the methods & properties that it has.
+# Emphasis on behaviour of the object rather than its inheritance.
+# ex.
+class Dog:
+    def speak(self):
+        return "Woof!"
+
+class Cat:
+    def speak(self):
+        return "Meow!"
+
+class Bird:
+    def speak(self):
+        return "Tweet!"
+
+def animal_speak(animal):
+    print(animal.speak())
+
+dog = Dog()
+cat = Cat()
+bird = Bird()
+
+animal_speak(dog)  # Output: Woof!
+animal_speak(cat)  # Output: Meow!
+animal_speak(bird) # Output: Tweet!
+
 
 #12. What are *args and **kwargs in Python, and how are they used in function arguments?
 
