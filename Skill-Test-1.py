@@ -104,8 +104,31 @@ animal_speak(dog)  # Output: Woof!
 animal_speak(cat)  # Output: Meow!
 animal_speak(bird) # Output: Tweet!
 
-
 #12. What are *args and **kwargs in Python, and how are they used in function arguments?
+# They are a special syntax used in function arguments for passing a variable number of arguments to a function
+# You can use *args & *kwargs to pass any number of positional or keyword arguments, respectively.
+# *args
+def example_function(*args):
+    for arg in args:
+        print(arg)
+
+example_function(1, 2, 3, 4)
+
+# *kwargs
+def example_function(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key} = {value}")
+
+example_function(a=1, b=2, c=3)
+
+# *args & *kwargs
+def example_function(*args, **kwargs):
+    for arg in args:
+        print(arg)
+    for key, value in kwargs.items():
+        print(f"{key} = {value}")
+
+example_function(1, 2, 3, a=4, b=5, c=6)
 
 #13. What is the purpose of the enumerate function, and provide an example of how to use it.
 
