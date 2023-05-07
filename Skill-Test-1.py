@@ -131,6 +131,20 @@ def example_function(*args, **kwargs):
 example_function(1, 2, 3, a=4, b=5, c=6)
 
 #13. What is the purpose of the enumerate function, and provide an example of how to use it.
+# This function is used to add a counter to an iterable. (ie. list, string, tuple).
+# It returns an enumerate object, which is an iterator containing pairs of an index and the
+# corresponding element from the iterable
+fruits = ['apple', 'banana', 'cherry', 'date']
+
+# Using enumerate in a for loop
+for index, value in enumerate(fruits):
+    print(f"Index: {index}, Value: {value}")
+
+# Output
+# Index: 0, Value: apple
+# Index: 1, Value: banana
+# Index: 2, Value: cherry
+# Index: 3, Value: date
 
 #14. Describe the difference between a generator and a list in Python, and provide an example of using a generator.
 
