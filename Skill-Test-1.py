@@ -147,5 +147,25 @@ for index, value in enumerate(fruits):
 # Index: 3, Value: date
 
 #14. Describe the difference between a generator and a list in Python, and provide an example of using a generator.
+# Both are used to store and manage collections of items:
+# Generators are defined using a function rather than a data structure
+# Generators cannot be maniuplated like lists
+# Lists are created using square brackets '[]', while generators use the 'yield' keyword
+def fibonacci_generator(n):
+    a, b = 0, 1
+    for _ in range(n):
+        yield a
+        a, b = b, a + b
+
+# To use the generator, you can either convert it to a list or iterate over it directly:
+
+# Convert generator to a list
+fibonacci_list = list(fibonacci_generator(10))
+print(fibonacci_list)  # Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+# Iterate over generator directly
+for num in fibonacci_generator(10):
+    print(num, end=' ')
+# Output: 0 1 1 2 3 5 8 13 21 34
 
 #15. What is a context manager in Python, and how is it typically used? Provide an example using the with statement.
