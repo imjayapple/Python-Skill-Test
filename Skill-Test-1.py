@@ -169,3 +169,25 @@ for num in fibonacci_generator(10):
 # Output: 0 1 1 2 3 5 8 13 21 34
 
 #15. What is a context manager in Python, and how is it typically used? Provide an example using the with statement.
+# Context manager is an object that defines methods to be used in conjuction with the 'with' keyword.
+# __enter__: This method is run when execution flow enters the block of code within the with statement.
+# __exit__: This method is run when execution flow leaves the block of code within the with statement.
+with open('file.txt', 'r') as file:
+    content = file.read()
+
+# example
+class MyContextManager:
+    def __enter__(self):
+        print("Entering the block")
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        print("Exiting the block")
+
+with MyContextManager() as x:
+    print("Inside the block")
+
+# Running this code will yield:
+# Entering the block
+# Inside the block
+# Exiting the block
